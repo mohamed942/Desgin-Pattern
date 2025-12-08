@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/Creation Desgin/">
+    <Project Path="FactoryMethod/FactoryMethod.csproj" />
+  </Folder>
+  <Project Path="Desgin Pattern/Desgin Pattern.csproj" />
+</Solution>
