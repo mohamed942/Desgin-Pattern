@@ -2,6 +2,7 @@
 using BuilderPattern;
 using FactoryMethod;
 using ProtoType;
+using SingletonPattern;
 using System.Diagnostics.Contracts;
 namespace Desgin_Pattern
 {
@@ -72,6 +73,19 @@ namespace Desgin_Pattern
             
             Console.WriteLine($"Original Document Type: {textproto.Display()}");
             Console.WriteLine($"Cloned Document Type: {textclone.Display()}");
+
+            #endregion
+
+            #region Singleton Pattern
+
+            // one check not thread safe
+            var logBtOneCheck = Singleton.GetInstanceOneCheck();
+
+            // two check thread safe
+            var logBtTwoCheck = Singleton.GetInstanceTwoCheck();
+
+            // lazy thread safe
+            var logBtLazy = Singleton.GetInstanceByLazy();
 
             #endregion
 

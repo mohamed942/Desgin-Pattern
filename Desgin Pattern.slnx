@@ -4,6 +4,7 @@
     <Project Path="BuilderPattern/BuilderPattern.csproj" Id="ec8f99ba-b6fb-4305-84f6-8c5e15d4ddd1" />
     <Project Path="FactoryMethod/FactoryMethod.csproj" />
     <Project Path="ProtoType/ProtoType.csproj" Id="05b8e63f-9567-403e-b978-870954094e37" />
+    <Project Path="SingletonPattern/SingletonPattern.csproj" Id="6c64f62d-2d70-41c6-80c9-24cb9be18df7" />
   </Folder>
   <Project Path="Desgin Pattern/Desgin Pattern.csproj" />
 </Solution>
