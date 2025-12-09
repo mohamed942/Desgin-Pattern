@@ -12,6 +12,7 @@
     <ProjectReference Include="..\AbstracFactory\AbstracFactory.csproj" />
     <ProjectReference Include="..\BuilderPattern\BuilderPattern.csproj" />
     <ProjectReference Include="..\FactoryMethod\FactoryMethod.csproj" />
+    <ProjectReference Include="..\ProtoType\ProtoType.csproj" />
   </ItemGroup>
 
 </Project>

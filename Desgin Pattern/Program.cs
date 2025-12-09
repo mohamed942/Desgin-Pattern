@@ -1,6 +1,7 @@
 ﻿using AbstracFactory;
 using BuilderPattern;
 using FactoryMethod;
+using ProtoType;
 using System.Diagnostics.Contracts;
 namespace Desgin_Pattern
 {
@@ -57,6 +58,21 @@ namespace Desgin_Pattern
             var gamingComputer = gamingComputerBuilder.GetComputer();
 
             gamingComputer.DisplayConfiguration();
+            #endregion
+
+            #region Prototype Pattern
+
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("                     Builder Pattern            ");
+            Console.WriteLine();
+
+            var textproto = new TextDocument("Text");
+
+            var textclone = new TextClient(textproto).TextDocumentClone;
+            
+            Console.WriteLine($"Original Document Type: {textproto.Display()}");
+            Console.WriteLine($"Cloned Document Type: {textclone.Display()}");
+
             #endregion
 
             #endregion
