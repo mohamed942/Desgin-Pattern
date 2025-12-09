@@ -1,5 +1,7 @@
 <Solution>
   <Folder Name="/Creation Desgin/">
+    <Project Path="AbstracFactory/AbstracFactory.csproj" Id="d19384c1-b7c2-47ac-a838-9df3bfbc1cd8" />
+    <Project Path="BuilderPattern/BuilderPattern.csproj" Id="ec8f99ba-b6fb-4305-84f6-8c5e15d4ddd1" />
     <Project Path="FactoryMethod/FactoryMethod.csproj" />
   </Folder>
   <Project Path="Desgin Pattern/Desgin Pattern.csproj" />
