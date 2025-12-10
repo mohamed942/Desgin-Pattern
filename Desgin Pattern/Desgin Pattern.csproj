@@ -10,7 +10,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AbstracFactory\AbstracFactory.csproj" />
+    <ProjectReference Include="..\AdapterPattern\AdapterPattern.csproj" />
     <ProjectReference Include="..\BuilderPattern\BuilderPattern.csproj" />
+    <ProjectReference Include="..\DecoratePattern\DecoratePattern.csproj" />
     <ProjectReference Include="..\FactoryMethod\FactoryMethod.csproj" />
     <ProjectReference Include="..\ProtoType\ProtoType.csproj" />
     <ProjectReference Include="..\SingletonPattern\SingletonPattern.csproj" />

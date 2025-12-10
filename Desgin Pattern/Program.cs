@@ -1,5 +1,7 @@
 ﻿using AbstracFactory;
+using AdapterPattern;
 using BuilderPattern;
+using DecoratePattern;
 using FactoryMethod;
 using ProtoType;
 using SingletonPattern;
@@ -86,6 +88,46 @@ namespace Desgin_Pattern
 
             // lazy thread safe
             var logBtLazy = Singleton.GetInstanceByLazy();
+
+            #endregion
+
+            #endregion
+
+            #region Structural Patterns
+
+
+            #region Adapter Pattern
+
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("                     Adapter Pattern            ");
+            Console.WriteLine();
+
+            Adaptee adaptee = new Adaptee();
+
+            var adapter = new Adapter(adaptee);
+
+            adapter.Request();
+
+            #endregion
+
+            #region Decorator Pattern
+
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("                     Decorator Pattern            ");
+            Console.WriteLine();
+            var coffee = new SimpleCoffee();
+
+            Console.WriteLine($"{coffee.GetDescription()} Cost: {coffee.GetCost()}");
+
+            var milk = new MilkCoffee(coffee);
+            Console.WriteLine($"{milk.GetDescription()} Cost: {milk.GetCost()}");
+
+            var chocolate = new ChocolateCoffee(milk);
+            Console.WriteLine($"{chocolate.GetDescription()} Cost: {chocolate.GetCost()}");
+
+            #endregion
+
+            #region 
 
             #endregion
 
