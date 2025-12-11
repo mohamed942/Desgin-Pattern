@@ -9,6 +9,7 @@
   <Folder Name="/structural Pattern/">
     <Project Path="AdapterPattern/AdapterPattern.csproj" Id="1e11ad76-cb0c-4da4-8ff2-0c465c55f637" />
     <Project Path="DecoratePattern/DecoratePattern.csproj" Id="70a98c31-a4fe-4ed4-8aac-1ae52bfeee89" />
+    <Project Path="FacadePattern/FacadePattern.csproj" Id="f436babc-1b1c-4784-b924-07449bc398ac" />
   </Folder>
   <Project Path="Desgin Pattern/Desgin Pattern.csproj" />
 </Solution>

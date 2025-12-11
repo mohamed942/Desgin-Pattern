@@ -2,6 +2,7 @@
 using AdapterPattern;
 using BuilderPattern;
 using DecoratePattern;
+using FacadePattern;
 using FactoryMethod;
 using ProtoType;
 using SingletonPattern;
@@ -10,6 +11,11 @@ namespace Desgin_Pattern
 {
     internal class Program
     {
+        public static void ShowMenu(Menu menu)
+        {
+            foreach (var item in menu.Foods)
+                Console.WriteLine($"{item.Name} : {item.Price}");
+        }
         static void Main(string[] args)
         {
             #region Creational Patterns
@@ -127,7 +133,17 @@ namespace Desgin_Pattern
 
             #endregion
 
-            #region 
+            #region Facade Pattern
+
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("                     Facade Pattern            ");
+            Console.WriteLine();
+            var facade = new RestaurantFacade();
+
+            ShowMenu(facade.GetVegMenu());
+            ShowMenu(facade.GetNonVegMenu());
+            ShowMenu(facade.GetBothMenu());
+
 
             #endregion
 
