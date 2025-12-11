@@ -6,6 +6,7 @@ using FacadePattern;
 using FactoryMethod;
 using ProtoType;
 using SingletonPattern;
+using CompositePattern;
 using System.Diagnostics.Contracts;
 namespace Desgin_Pattern
 {
@@ -144,6 +145,22 @@ namespace Desgin_Pattern
             ShowMenu(facade.GetNonVegMenu());
             ShowMenu(facade.GetBothMenu());
 
+
+            #endregion
+
+            #region Composite Pattern
+
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("                     Composite Pattern            ");
+            Console.WriteLine();
+
+            var datafile = new CompositePattern.File("data", 10);
+            var imagefile = new CompositePattern.File("image", 20);
+            var folder = new Folder("Project");
+            folder.Add(datafile);
+            folder.Add(imagefile);
+
+            folder.Display();
 
             #endregion
 
