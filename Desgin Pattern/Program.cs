@@ -8,6 +8,7 @@ using ProtoType;
 using SingletonPattern;
 using CompositePattern;
 using System.Diagnostics.Contracts;
+using ProxyPattern;
 namespace Desgin_Pattern
 {
     internal class Program
@@ -161,6 +162,21 @@ namespace Desgin_Pattern
             folder.Add(imagefile);
 
             folder.Display();
+
+            #endregion
+
+            #region Proxy Pattern
+
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("                     Proxy Pattern            ");
+            Console.WriteLine();
+            var developerEmployee = new Employee("John Doe","1234","Developer");
+            var sharedFolderproxy = new SharedFolderProxy(developerEmployee);
+            sharedFolderproxy.PerformRWOperations();
+
+            var adminEmployee = new Employee("John Doe", "1234", "Admin");
+            sharedFolderproxy = new SharedFolderProxy(adminEmployee);
+            sharedFolderproxy.PerformRWOperations();
 
             #endregion
 

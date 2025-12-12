@@ -11,6 +11,7 @@
     <Project Path="CompositePattern/CompositePattern.csproj" Id="61523007-a48b-4c9b-96b9-271f0449b83b" />
     <Project Path="DecoratePattern/DecoratePattern.csproj" Id="70a98c31-a4fe-4ed4-8aac-1ae52bfeee89" />
     <Project Path="FacadePattern/FacadePattern.csproj" Id="f436babc-1b1c-4784-b924-07449bc398ac" />
+    <Project Path="ProxyPattern/ProxyPattern.csproj" Id="d36183eb-cf96-4823-9cf4-c7cb7f91b33f" />
   </Folder>
   <Project Path="Desgin Pattern/Desgin Pattern.csproj" />
 </Solution>
