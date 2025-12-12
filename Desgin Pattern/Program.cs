@@ -9,6 +9,8 @@ using SingletonPattern;
 using CompositePattern;
 using System.Diagnostics.Contracts;
 using ProxyPattern;
+using BridgePattern;
+using Car = BridgePattern.Car;
 namespace Desgin_Pattern
 {
     internal class Program
@@ -177,6 +179,21 @@ namespace Desgin_Pattern
             var adminEmployee = new Employee("John Doe", "1234", "Admin");
             sharedFolderproxy = new SharedFolderProxy(adminEmployee);
             sharedFolderproxy.PerformRWOperations();
+
+            #endregion
+
+            #region Bridge Pattern
+
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("                     Bridge Pattern            ");
+            Console.WriteLine();
+
+            var car = new Car(new Produce(), new Assemble());
+            car.manufacture();
+
+            var bike = new Bike(new Produce(), new Assemble());
+
+            bike.manufacture();
 
             #endregion
 

@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AbstracFactory\AbstracFactory.csproj" />
     <ProjectReference Include="..\AdapterPattern\AdapterPattern.csproj" />
+    <ProjectReference Include="..\BridgePattern\BridgePattern.csproj" />
     <ProjectReference Include="..\BuilderPattern\BuilderPattern.csproj" />
     <ProjectReference Include="..\CompositePattern\CompositePattern.csproj" />
     <ProjectReference Include="..\DecoratePattern\DecoratePattern.csproj" />
