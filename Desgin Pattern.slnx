@@ -1,5 +1,8 @@
 <Solution>
-  <Folder Name="/Creation Desgin/">
+  <Folder Name="/Behavior Pattern/">
+    <Project Path="Observer Pattern/Observer Pattern.csproj" Id="d621b9bb-993a-41f0-948e-cf8f55dae12c" />
+  </Folder>
+  <Folder Name="/Creation Pattern/">
     <Project Path="AbstracFactory/AbstracFactory.csproj" Id="d19384c1-b7c2-47ac-a838-9df3bfbc1cd8" />
     <Project Path="BuilderPattern/BuilderPattern.csproj" Id="ec8f99ba-b6fb-4305-84f6-8c5e15d4ddd1" />
     <Project Path="FactoryMethod/FactoryMethod.csproj" />

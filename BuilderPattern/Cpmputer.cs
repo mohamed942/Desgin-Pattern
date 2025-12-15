@@ -2,10 +2,10 @@
 
 public class Cpmputer
 {
-    private string CPU;
-    private string GPU;
-    private string RAM;
-    private string Storage;
+    private string CPU = string.Empty;
+    private string GPU = string.Empty;
+    private string RAM= string.Empty;
+    private string Storage = string.Empty;
     public void SetCPU(string cpu)
     {
         CPU = cpu;

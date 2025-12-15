@@ -17,6 +17,7 @@
     <ProjectReference Include="..\DecoratePattern\DecoratePattern.csproj" />
     <ProjectReference Include="..\FacadePattern\FacadePattern.csproj" />
     <ProjectReference Include="..\FactoryMethod\FactoryMethod.csproj" />
+    <ProjectReference Include="..\Observer Pattern\Observer Pattern.csproj" />
     <ProjectReference Include="..\ProtoType\ProtoType.csproj" />
     <ProjectReference Include="..\ProxyPattern\ProxyPattern.csproj" />
     <ProjectReference Include="..\SingletonPattern\SingletonPattern.csproj" />

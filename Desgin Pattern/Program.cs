@@ -1,15 +1,16 @@
 ﻿using AbstracFactory;
 using AdapterPattern;
+using BridgePattern;
 using BuilderPattern;
+using CompositePattern;
 using DecoratePattern;
 using FacadePattern;
 using FactoryMethod;
+using Observer_Pattern;
 using ProtoType;
-using SingletonPattern;
-using CompositePattern;
-using System.Diagnostics.Contracts;
 using ProxyPattern;
-using BridgePattern;
+using SingletonPattern;
+using System.Diagnostics.Contracts;
 using Car = BridgePattern.Car;
 namespace Desgin_Pattern
 {
@@ -195,6 +196,28 @@ namespace Desgin_Pattern
 
             bike.manufacture();
 
+            #endregion
+
+            #endregion
+
+            #region Behavioral Patterns
+
+            #region Observer Pattern
+
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("                     Observer Pattern            ");
+            Console.WriteLine();
+
+            WeatherStation weatherStation = new WeatherStation();
+            PhoneDisplay phoneDisplay = new PhoneDisplay();
+            TVDisplay tvDisplay = new TVDisplay();
+            weatherStation.addObserver(phoneDisplay);
+            weatherStation.addObserver(tvDisplay);
+            // Simulate weather change
+            weatherStation.notifyObserver();
+            weatherStation.removeObserver(tvDisplay);
+            // Simulate another weather change
+            weatherStation.notifyObserver();
             #endregion
 
             #endregion

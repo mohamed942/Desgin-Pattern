@@ -9,7 +9,7 @@ public class Car : Vehicle
     public override void manufacture()
     {
         Console.WriteLine("Car");
-        workshop1.work();
-        workshop2.work();
+        workshop1?.work();
+        workshop2?.work();
     }
 }
