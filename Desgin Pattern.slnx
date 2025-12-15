@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/Behavior Pattern/">
+    <Project Path="CommandPattern/CommandPattern.csproj" Id="53e7454c-a0c7-4f89-a22b-edaa16f325d0" />
     <Project Path="Observer Pattern/Observer Pattern.csproj" Id="d621b9bb-993a-41f0-948e-cf8f55dae12c" />
     <Project Path="Strategy Pattern/Strategy Pattern.csproj" Id="1af9794a-9a2c-487f-9a65-3fc030a242de" />
   </Folder>

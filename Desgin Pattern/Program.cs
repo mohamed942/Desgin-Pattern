@@ -13,6 +13,7 @@ using SingletonPattern;
 using System.Diagnostics.Contracts;
 using Strategy_Pattern;
 using Car = BridgePattern.Car;
+using CommandPattern;
 namespace Desgin_Pattern
 {
     internal class Program
@@ -238,6 +239,39 @@ namespace Desgin_Pattern
             int[] array3 = { 2, 10, 5, 3, 1, 4, 7, 6, 8, 9 };
             sortingContext.PerformSort(array3); // Output: Sorting using Quick Sort
             sortingContext.PrintArray(array3); // Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+            #endregion
+
+            #region Command Pattern
+
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("                     Command Pattern            ");
+            Console.WriteLine();
+
+            var tv = new Television();
+            var  radio = new Radio();
+            var tvOn = new TurnOnCommand(tv);
+            var tvOff = new TurnOffCommand(tv);
+            var radioOn = new TurnOnCommand(radio);
+            var radioOff = new TurnOffCommand(radio);
+            var changeChannel = new ChangeChannelCommand(tv, 5);
+            var changeFrequency = new SetFrequencyCommand(radio, 100);
+            var remoteControl = new RomoteControl();
+            
+            remoteControl.AddCommand(tvOn);
+            remoteControl.ExecuteCommands();
+            remoteControl.AddCommand(radioOn);
+            remoteControl.ExecuteCommands();
+            remoteControl.AddCommand(changeChannel);
+            remoteControl.ExecuteCommands();
+            remoteControl.AddCommand(changeFrequency);
+            remoteControl.ExecuteCommands();
+            remoteControl.AddCommand(tvOff);
+            remoteControl.ExecuteCommands();
+            remoteControl.AddCommand(radioOff);
+            remoteControl.ExecuteCommands();
+            
+
+
             #endregion
 
             #endregion
