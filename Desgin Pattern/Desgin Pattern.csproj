@@ -21,6 +21,7 @@
     <ProjectReference Include="..\ProtoType\ProtoType.csproj" />
     <ProjectReference Include="..\ProxyPattern\ProxyPattern.csproj" />
     <ProjectReference Include="..\SingletonPattern\SingletonPattern.csproj" />
+    <ProjectReference Include="..\Strategy Pattern\Strategy Pattern.csproj" />
   </ItemGroup>
 
 </Project>

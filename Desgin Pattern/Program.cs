@@ -11,6 +11,7 @@ using ProtoType;
 using ProxyPattern;
 using SingletonPattern;
 using System.Diagnostics.Contracts;
+using Strategy_Pattern;
 using Car = BridgePattern.Car;
 namespace Desgin_Pattern
 {
@@ -218,6 +219,25 @@ namespace Desgin_Pattern
             weatherStation.removeObserver(tvDisplay);
             // Simulate another weather change
             weatherStation.notifyObserver();
+            #endregion
+
+            #region Strategy Pattern
+
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("                     Strategy Pattern            ");
+            Console.WriteLine();
+
+            // Create SortingContext with BubbleSortStrategy
+            SortContext sortingContext = new SortContext(new BubbleSort());
+            int[] array1 = { 2,10 ,5, 3, 1, 4, 7, 6, 8, 9 };
+            sortingContext.PerformSort(array1); // Output: Sorting using Bubble Sort
+            sortingContext.PrintArray(array1); // Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+            // Change strategy to QuickSortStrategy
+            sortingContext.SetSortStrategy(new QuickSort());
+            int[] array3 = { 2, 10, 5, 3, 1, 4, 7, 6, 8, 9 };
+            sortingContext.PerformSort(array3); // Output: Sorting using Quick Sort
+            sortingContext.PrintArray(array3); // Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
             #endregion
 
             #endregion

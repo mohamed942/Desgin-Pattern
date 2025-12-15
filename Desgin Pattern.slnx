@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/Behavior Pattern/">
     <Project Path="Observer Pattern/Observer Pattern.csproj" Id="d621b9bb-993a-41f0-948e-cf8f55dae12c" />
+    <Project Path="Strategy Pattern/Strategy Pattern.csproj" Id="1af9794a-9a2c-487f-9a65-3fc030a242de" />
   </Folder>
   <Folder Name="/Creation Pattern/">
     <Project Path="AbstracFactory/AbstracFactory.csproj" Id="d19384c1-b7c2-47ac-a838-9df3bfbc1cd8" />
