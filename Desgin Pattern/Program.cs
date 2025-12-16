@@ -14,6 +14,7 @@ using System.Diagnostics.Contracts;
 using Strategy_Pattern;
 using Car = BridgePattern.Car;
 using CommandPattern;
+using Chain_of_Responsibility_pattern;
 namespace Desgin_Pattern
 {
     internal class Program
@@ -269,7 +270,33 @@ namespace Desgin_Pattern
             remoteControl.ExecuteCommands();
             remoteControl.AddCommand(radioOff);
             remoteControl.ExecuteCommands();
-            
+
+
+
+            #endregion
+
+            #region Chain of Responsibility Pattern
+
+            Console.WriteLine("--------------------------------");
+            Console.WriteLine("                     Chain of Responsibility Pattern            ");
+            Console.WriteLine();
+
+            var level1Handler = new Level1Support();
+            var level2Handler = new Level2Support();
+            var level3Handler = new Level3Support();
+
+            // Set Chain of Responsibility
+            level1Handler.setNext(level2Handler);
+            level2Handler.setNext(level3Handler);
+
+            var request = new Request(Priority.Level1);
+            level1Handler.handleRequest(request);
+
+            request = new Request(Priority.Level2);
+            level1Handler.handleRequest(request);
+
+            request = new Request(Priority.Level3);
+            level1Handler.handleRequest(request);
 
 
             #endregion

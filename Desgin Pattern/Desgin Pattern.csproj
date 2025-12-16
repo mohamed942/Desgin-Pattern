@@ -13,6 +13,7 @@
     <ProjectReference Include="..\AdapterPattern\AdapterPattern.csproj" />
     <ProjectReference Include="..\BridgePattern\BridgePattern.csproj" />
     <ProjectReference Include="..\BuilderPattern\BuilderPattern.csproj" />
+    <ProjectReference Include="..\Chain of Responsibility pattern\Chain of Responsibility pattern.csproj" />
     <ProjectReference Include="..\CommandPattern\CommandPattern.csproj" />
     <ProjectReference Include="..\CompositePattern\CompositePattern.csproj" />
     <ProjectReference Include="..\DecoratePattern\DecoratePattern.csproj" />
