@@ -3,6 +3,7 @@
     <Project Path="Chain of Responsibility pattern/Chain of Responsibility pattern.csproj" Id="72d37fac-d8c3-417c-8054-521dd8f705eb" />
     <Project Path="CommandPattern/CommandPattern.csproj" Id="53e7454c-a0c7-4f89-a22b-edaa16f325d0" />
     <Project Path="Observer Pattern/Observer Pattern.csproj" Id="d621b9bb-993a-41f0-948e-cf8f55dae12c" />
+    <Project Path="State Pattern/State Pattern.csproj" Id="a5eb8495-c630-4b3c-b4f9-e07408feeb28" />
     <Project Path="Strategy Pattern/Strategy Pattern.csproj" Id="1af9794a-9a2c-487f-9a65-3fc030a242de" />
   </Folder>
   <Folder Name="/Creation Pattern/">

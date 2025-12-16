@@ -15,6 +15,7 @@ using Strategy_Pattern;
 using Car = BridgePattern.Car;
 using CommandPattern;
 using Chain_of_Responsibility_pattern;
+using State_Pattern;
 namespace Desgin_Pattern
 {
     internal class Program
@@ -297,6 +298,26 @@ namespace Desgin_Pattern
 
             request = new Request(Priority.Level3);
             level1Handler.handleRequest(request);
+
+
+            #endregion
+
+            #region State Pattern
+
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("                     State Pattern            ");
+            Console.WriteLine();
+
+            var vendingMachine = new VendingMachine();
+
+            vendingMachine.request();
+
+            vendingMachine.setState(new ProductSelectedState());
+            vendingMachine.request();
+
+            vendingMachine.setState(new PaymentPendingState());
+            vendingMachine.request();
+            vendingMachine.setState(new OutOfStockState());
 
 
             #endregion
