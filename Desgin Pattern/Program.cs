@@ -16,6 +16,7 @@ using Car = BridgePattern.Car;
 using CommandPattern;
 using Chain_of_Responsibility_pattern;
 using State_Pattern;
+using Mediator_Pattern;
 namespace Desgin_Pattern
 {
     internal class Program
@@ -322,6 +323,21 @@ namespace Desgin_Pattern
 
             #endregion
 
+            #endregion
+
+            #region mediator pattern
+
+            Console.WriteLine("--------------------------");
+            Console.WriteLine("                     Mediator Pattern            ");
+            Console.WriteLine();
+
+            var tower = new AirportControlTower();
+
+            var plane1 = new CommercialAirplane(tower);
+            tower.TakeOff(plane1);
+            tower.Land();
+
+            
             #endregion
 
             Console.ReadKey();
